@@ -16,3 +16,5 @@ app.use("/api", router);
 app.listen(process.env.PORT || 8080, () => {
   console.log("App is running on port", process.env.PORT || 8080);
 });
+
+module.exports = app;
