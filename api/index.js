@@ -11,6 +11,8 @@ app.use(cors());
 const router = require("./router");
 require("./config");
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
+
 app.use("/api", router);
 
 app.listen(process.env.PORT || 8080, () => {
